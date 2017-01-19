@@ -1,0 +1,16 @@
+[mysqld]
+bind-address = 0.0.0.0
+console = 1
+log_error = /dev/stderr
+
+max_allowed_packet           = 128M
+
+innodb_file_format           = BARRACUDA
+innodb_buffer_pool_size      = 128M
+innodb_autoinc_lock_mode     = 2
+
+query_cache_type             = 0
+query_cache_size             = 0
+
+skip-log-bin
+skip-external-locking
