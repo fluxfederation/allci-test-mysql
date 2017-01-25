@@ -9,4 +9,4 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
 COPY extra.cnf /etc/mysql/conf.d/extra.cnf
 EXPOSE 3306
 
-CMD /usr/sbin/mysqld --skip-grant-tables
+CMD ["/usr/sbin/mysqld", "--skip-grant-tables"]
